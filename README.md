@@ -2,9 +2,9 @@
 
 A comprehensive full-stack web application for tracking and managing personal finances, built with Next.js, Express.js, and MongoDB.
 
-## Features
+# Features
 
-### Core Features
+## Core Features
 - **User Authentication**: Secure login with Google OAuth and email/password
 - **Transaction Management**: Create, read, update, and delete income and expense transactions
 - **Date Range Filtering**: View transactions by specific time periods
@@ -13,23 +13,21 @@ A comprehensive full-stack web application for tracking and managing personal fi
 - **Category Management**: Custom categories for organizing transactions
 - **Multi-user Support**: Secure data isolation between users
 
-### Bonus Features
+## Bonus Features
 - **Pagination**: Efficient data loading with paginated transaction lists
 - **Real-time Statistics**: Dynamic financial summaries and insights
 - **Responsive Design**: Mobile-first approach with excellent UX across devices
 - **Data Visualization**: Charts for expense categories and monthly trends
 
-## Technology Stack
+# Technology Stack
 
-### Frontend
+## Frontend
 - **Next.js 14**: React framework with SSR and static generation
-- **React 18**: Component-based UI library
 - **Tailwind CSS**: Utility-first CSS framework
-- **Chart.js**: Interactive data visualization
 - **Axios**: HTTP client for API communication
 - **Lucide React**: Beautiful icon library
 
-### Backend
+## Backend
 - **Express.js**: Node.js web framework
 - **MongoDB**: NoSQL database with Mongoose ODM
 - **JWT**: JSON Web Tokens for authentication
@@ -37,10 +35,9 @@ A comprehensive full-stack web application for tracking and managing personal fi
 - **Multer**: File upload handling
 - **bcryptjs**: Password hashing
 - **Express Validator**: Request validation
-- **Helmet**: Security headers
 - **Rate Limiting**: API protection
 
-### Security Features
+## Security Features
 - JWT-based authentication
 - Password hashing with bcrypt
 - Rate limiting to prevent abuse
@@ -49,7 +46,7 @@ A comprehensive full-stack web application for tracking and managing personal fi
 - Secure file uploads
 - Environment variable protection
 
-## Installation and Setup
+### Installation and Setup
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -64,7 +61,10 @@ cd personal-finance-assistant
 
 ### 2. Install Dependencies
 ```bash
-npm run install-deps
+cd client && npm install && cd../server && npm install
+```
+```bash
+cd ..
 ```
 
 ### 3. Environment Configuration
@@ -91,10 +91,12 @@ NEXT_PUBLIC_GOOGLE_CLIENT_ID=your-google-client-id
 2. Create a new project or select existing one
 3. Enable Google+ API
 4. Create OAuth 2.0 credentials
-5. Add authorized redirect URIs:
+5. Add Authorised JavaScript origins URIs:
    - `http://localhost:3000` (for development)
-   - Your production domain
-6. Copy Client ID and Client Secret to environment variables
+   - `hhtp://localhost:5000`
+6. Authorised redirect URIs
+    - `http://localhost:5000/api/auth/callback` (for development)
+7. Copy Client ID and Client Secret to environment variables
 
 ### 5. Database Setup
 - Install MongoDB locally or use MongoDB Atlas
@@ -182,8 +184,6 @@ personal-finance-assistant/
 - Input validation and sanitization
 - CORS and security headers
 
-## Deployment
-
 ### Environment Variables for Production
 Ensure all environment variables are properly set for production:
 - Update MongoDB URI for production database
@@ -217,6 +217,3 @@ The codebase follows these principles:
 4. Add tests if applicable
 5. Submit a pull request
 
-## License
-
-This project is licensed under the MIT License.
