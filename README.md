@@ -4,13 +4,13 @@ https://youtu.be/NGrGpRZUK8A
 
 ---------------------------------------------------------------------------------
 
-# Personal Finance Assistant
+## Personal Finance Assistant
 
 A comprehensive full-stack web application for tracking and managing personal finances, built with Next.js, Express.js, and MongoDB.
 
-# Features
+## Features
 
-## Core Features
+### Core Features
 - **User Authentication**: Secure login with Google OAuth and email/password
 - **Transaction Management**: Create, read, update, and delete income and expense transactions
 - **Date Range Filtering**: View transactions by specific time periods
@@ -19,21 +19,21 @@ A comprehensive full-stack web application for tracking and managing personal fi
 - **Category Management**: Custom categories for organizing transactions
 - **Multi-user Support**: Secure data isolation between users
 
-## Bonus Features
+### Bonus Features
 - **Pagination**: Efficient data loading with paginated transaction lists
 - **Real-time Statistics**: Dynamic financial summaries and insights
 - **Responsive Design**: Mobile-first approach with excellent UX across devices
 - **Data Visualization**: Charts for expense categories and monthly trends
 
-# Technology Stack
+## Technology Stack
 
-## Frontend
+### Frontend
 - **Next.js 14**: React framework with SSR and static generation
 - **Tailwind CSS**: Utility-first CSS framework
 - **Axios**: HTTP client for API communication
 - **Lucide React**: Beautiful icon library
 
-## Backend
+### Backend
 - **Express.js**: Node.js web framework
 - **MongoDB**: NoSQL database with Mongoose ODM
 - **JWT**: JSON Web Tokens for authentication
@@ -43,7 +43,7 @@ A comprehensive full-stack web application for tracking and managing personal fi
 - **Express Validator**: Request validation
 - **Rate Limiting**: API protection
 
-## Security Features
+### Security Features
 - JWT-based authentication
 - Password hashing with bcrypt
 - Rate limiting to prevent abuse
@@ -52,20 +52,20 @@ A comprehensive full-stack web application for tracking and managing personal fi
 - Secure file uploads
 - Environment variable protection
 
-### Installation and Setup
+# Installation and Setup
 
-### Prerequisites
+## Prerequisites
 - Node.js (v16 or higher)
 - MongoDB (local or MongoDB Atlas)
 - Google OAuth credentials (for Google login)
 
-### 1. Clone the Repository
+## 1. Clone the Repository
 ```bash
 git clone <repository-url>
 cd personal-finance-assistant
 ```
 
-### 2. Install Dependencies
+## 2. Install Dependencies
 ```bash
 cd client && npm install && cd../server && npm install
 ```
@@ -73,9 +73,9 @@ cd client && npm install && cd../server && npm install
 cd ..
 ```
 
-### 3. Environment Configuration
+## 3. Environment Configuration
 
-#### Server Environment (.env in server folder)
+## Server Environment (.env in server folder)
 ```env
 MONGODB_URI=mongodb://localhost:27017/personal-finance
 JWT_SECRET=your-super-secret-jwt-key-here-make-it-long-and-random
@@ -86,7 +86,7 @@ NODE_ENV=development
 CLIENT_URL=http://localhost:3000
 ```
 
-#### Client Environment (.env.local in client folder)
+## Client Environment (.env.local in client folder)
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:5000
 NEXT_PUBLIC_GOOGLE_CLIENT_ID=your-google-client-id
