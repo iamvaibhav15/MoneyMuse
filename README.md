@@ -62,7 +62,7 @@ A comprehensive full-stack web application for tracking and managing personal fi
 ## 1. Clone the Repository
 ```bash
 git clone <repository-url>
-cd personal-finance-assistant
+cd MoneyMuse
 ```
 
 ## 2. Install Dependencies
@@ -145,7 +145,7 @@ npm run server  # Backend on http://localhost:5000
 ## File Structure
 
 ```
-personal-finance-assistant/
+MoneyMuse/
 ├── client/                 # Next.js frontend
 │   ├── components/        # React components
 │   ├── hooks/            # Custom React hooks
