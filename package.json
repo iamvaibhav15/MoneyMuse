@@ -1,0 +1,26 @@
+{
+  "name": "personal-finance-assistant",
+  "version": "1.0.0",
+  "description": "A comprehensive full-stack personal finance tracking application",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install-deps": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "finance",
+    "expense-tracker",
+    "income-tracker",
+    "nextjs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Finance App Team",
+  "license": "MIT"
+}
