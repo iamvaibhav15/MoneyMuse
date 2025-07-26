@@ -216,6 +216,3 @@ The codebase follows these principles:
 3. Make your changes
 4. Add tests if applicable
 5. Submit a pull request
-
-Frontend Origional Github Repo ->  https://github.com/iamvaibhav15/FinanceApp_Frontend
-Backend Origional Github Repo ->  https://github.com/iamvaibhav15/FinanceApp_Backend
