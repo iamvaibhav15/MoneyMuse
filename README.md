@@ -1,9 +1,3 @@
-## Working Demo Video
-
-https://youtu.be/NGrGpRZUK8A
-
----------------------------------------------------------------------------------
-
 ## Personal Finance Assistant (MoneyMuse)
 
 A comprehensive full-stack web application for tracking and managing personal finances, built with Next.js, Express.js, and MongoDB.
